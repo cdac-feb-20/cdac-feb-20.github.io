@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head><title>TraYo.com</title></head>
+<link rel="stylesheet" type="text/css" href="homepage_style.css">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+<div class="menu-bar">
+	<ol><li><h1>TraYo.com</h1></li></ol>
+	<!--<div><a href="#">TraYo.com<i class="fa fa-clone" aria-hidden="true"></i></a></li></div>-->
+	<ul> 
+	
+	<li class="active"><a href="#">Home<i class="fa fa-home" aria-hidden="true"></i></a></li>
+	<li><a href="#">Currency<i class="fa fa-inr" aria-hidden="true"></i></a>
+	
+	<div class="sub-menu-1">
+	<ul>
+	<li><a href="#">India</a></li>
+	<li><a href="#">China</a></li>
+	<li><a href="#">Malaysia</a></li>
+	<li><a href="#">Nepal</a></li>
+	<li><a href="#">Indonesia</a></li>
+	<li><a href="#">UAE</a></li>
+
+	</ul>
+	</div>
+	</li>
+	
+	<li><a href="#">Help<i class="fa fa-clone" aria-hidden="true"></i></a>
+	<div class="sub-menu-1">
+	<ul>
+	<li><a href="#">Change Booking</a></li>
+	<li><a href="#">FAQs</a></li>
+	<li><a href="#">Website Feedback</a></li>
+	</ul>
+	</div>
+	</li>
+	<li><a href="#">Your Bookings<i class="fa fa-angellist" aria-hidden="true"></i></a></li>
+	<li><a href="loginform.html">Sign In</a></li>
+	<li><a href="register.html">Create Account<i class="fa fa-edit" aria-hidden="true"></i></a></li>
+	<li><a href="#">Contac us<i class="fa fa-phone" aria-hidden="true"></i></a></li>
+	</ul>
+</div>
+
+<div class="A">
+
+<h1>Where to?</h1>
+<h2>Destinations and properties around the world...</h2><br>
+<input type="text" name="A1" placeholder="Search city here">
+<br><br>
+<hr>
+<table>
+<tr>
+<th>Check-In</th>
+<th>Check-Out</th>
+<br>
+</tr>
+<tr>
+<td><input type="date" name="t1"></td>
+<td><input type="date" name="t2"></td>
+</tr>
+</table>
+<br><br>
+<hr>
+<table>
+<tr>
+<th>Rooms</th>
+<th>Adults</th>
+<th>Child</th>
+
+</tr>
+<tr>
+<td><input type="number" name="t3"></td>
+<td><input type="number" name="t4"></td>
+<td><input type="number" name="t4"></td>
+
+</tr>
+<tr>
+<td>   </td>
+<td>Aged 18<sup>+</sup></td>
+<td>0-17 Age</td>
+
+</tr>
+</table>
+<hr>
+<br>
+<input type="button" name="search" value="Search">
+</div>
+<div class="slideshow-container" float="right">
+
+<div class="mySlides fade">
+  <img src="110.jpg" style="width:100%" height="220">
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="102.jpg" style="width:100%" height="220">
+</div>
+
+<div class="mySlides fade">
+  <img src="106.jpg" style="width:100%" height="220">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000);
+}
+</script>
+
+
+
+<table id="table1">
+<tr><td><h2 style:color="red">We do more than just hotels…</h2></td>
+</tr>
+<tr>
+<td><img src="a1.jpg"></td>
+<td><img src="a2.jpg"></td>
+<td><img src="a3.jpg"></td>
+</tr>
+<tr>
+<td><b>Apartments</b></td>
+<td><b>Hotels</b></td>
+<td><b>City Homes</b></td>
+</tr>
+
+<tr>
+<td><img src="a4.jpg"></td>
+<td><img src="a5.jpg"></td>
+<td><img src="a6.jpg"></td>
+</tr>
+<tr background-color=black>
+<td><b>Country retreats</b></td>
+<td><b>Holiday homes</b></td>
+<td><b>Resorts</b></td>
+</tr>
+</table>
+
+<table id="table2">
+<tr>
+<td><b>
+TraYo.com is a leading online accommodation site. We’re passionate about travel. Every day we inspire and reach millions of travellers across 25 local websites in 13 languages. So when it comes to booking the perfect hotel, holiday rental, resort, apartment, guest house or treehouse - we’ve got you covered. With hundreds of thousands of properties in over 6 countries and territories, we provide incomparable choice with a Price Guarantee.
+</b></td>
+</tr>
+</table>
+</body>
+</html>
