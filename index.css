@@ -1,0 +1,18 @@
+.textify-header {
+    font-size: x-large;
+    font-family: monospace;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px #607d8b;
+}
+
+.make-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.make-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
