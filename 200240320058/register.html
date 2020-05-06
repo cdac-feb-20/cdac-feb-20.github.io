@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>registration from</title>
+<style>
+body{ 	
+	background:url(reg.jpg);
+	background-repeat:no-repeat;
+	<!--background-size:cover;-->
+	background-position:center;
+	font-family:san-serif;
+	background-size: 100%;
+	}
+	
+.A {
+	width:370px;
+	height: 600px;
+	background:#000;
+	color:#fff;
+	top:3%;
+	left:65%;
+	position:absolute;
+	transform:translate(-50% -60%);
+	box-sizing : border-box;
+	padding:3px 35px;
+	border-radius:5%;
+	background-color: rgba(0, 0, 0, 0.3);
+	}
+.A input{
+	width:100%;
+	margin-left:0px;
+	margin-bottom:0px;
+	}
+.A input[type="submit"]{
+	border:none;
+	outline:none;
+	height:23px;
+	width:70%;
+	background:#00bfff;
+	color:#fff;
+	font-size:18px;
+	border-radius:20px;
+	margin-left:50px;
+}
+.A input[type="submit"]:hover{
+	cursor:pointer;
+	background:#0000b0;
+	color:#000;
+}
+.A input[type="text"],[type="Number"],[type="password"]{
+	border:none;
+	border-bottom:2px solid #fff;
+	background:transparent;
+	outline:none;
+	height:20px;
+	color:#fff;
+	font-size:16px;
+	
+}
+h1{
+	color:#dc143c;
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="A">
+<h1 style=text-align:center>Register Here</h1>
+<p>First Name:</p>
+<input type="text" name="Fname" placeholder="Enter First Name"><br>
+<p>Last Name</p>
+<input type="text" name="Lname" placeholder="Enter last Name"><br>
+<p>Enter Password:</p>
+<input type="password" name="Lname" placeholder="Enter Password"><br><br>
+<input type="password" name="Lname" placeholder="Confirm password"><br>
+<p>Mobile Number:</p>
+<select name="countryCode" id="">
+	<option data-countryCode="IN" value="91" Selected>India (+91)</option>
+	<optgroup label="Other countries">
+		<option data-countryCode="AU" value="61">Australia (+61)</option>
+
+		<option data-countryCode="BE" value="32">Belgium (+32)</option>
+
+		<option data-countryCode="CA" value="1">Canada (+1)</option>
+
+
+		<option data-countryCode="FR" value="33">France (+33)</option>
+		
+		<option data-countryCode="DE" value="49">Germany (+49)</option>
+		
+		<option data-countryCode="IS" value="354">Iceland (+354)</option>
+		<option data-countryCode="IN" value="91">India (+91)</option>
+	
+
+		<option data-countryCode="IT" value="39">Italy (+39)</option>
+		<option data-countryCode="JM" value="1876">Jamaica (+1876)</option>
+		<option data-countryCode="JP" value="81">Japan (+81)</option>
+		
+		<option data-countryCode="MX" value="52">Mexico (+52)</option>
+		
+		<option data-countryCode="NG" value="234">Nigeria (+234)</option>
+		
+		<option data-countryCode="RU" value="7">Russia (+7)</option>
+		
+		<option data-countryCode="SG" value="65">Singapore (+65)</option>
+		
+		<option data-countryCode="LK" value="94">Sri Lanka (+94)</option>
+		
+		<option data-countryCode="CH" value="41">Switzerland (+41)</option>
+		
+		<option data-countryCode="VA" value="379">Vatican City (+379)</option>
+		
+	</optgroup>
+</select><br><br>
+<input type="Number" name="m1" placeholder="Enter Mobile Number"><br>
+<p>Email :</p>
+<input type="text" name="e1" placeholder="Enter Email"><br><br>
+<label for="g1">Gender :</label>
+
+<select id="g1">
+  <option value="Male">Male</option>
+  <option value="Female">Female</option>
+  <option value="Other">Other</option>
+</select>
+<br><br>
+<input type="submit" name="btn" value="Sign Up"> 
+</div>
+</body>
+</html>

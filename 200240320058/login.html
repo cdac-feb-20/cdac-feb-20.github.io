@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lgin form</title>
+<style>
+body{
+	background:url(e4.png);
+	background-repeat:no-repeat;
+	<!---background-size:cover;--->
+	background-position:center;
+	font-family:san-serif; 
+  background-size: 100%;
+	}
+.loginbox{
+	width:320px;
+	height:400px;
+	background:#fff;
+	color:#000;
+	
+	top:5%;
+	left:15%;
+	position:absolute;
+	transform:translate(-50% -60%);
+	box-sizing : border-box;
+	padding:50px 20px;
+	border-radius:10%;
+	box-shadow:5px 10px #828a8c;
+	background-color: rgba(255,255,255, 0.6);
+}
+.user{
+	width:65px;
+	height:65px;
+	background:#fff;
+	border-radius:50%;
+	position:absolute;
+	top:2%;
+	margin-left:105px;
+	left:calc()(50% -50px);
+	}
+	
+.ulogo1{
+	width:23px;
+	height:23px;
+	position:absolute;
+	top:34%;
+	}
+.ulogo2{
+	width:23px;
+	height:23px;
+	position:absolute;
+	top:49%;
+	}
+	
+.loginbox input{
+	width:240px;
+	margin-bottom:30px;
+	}
+
+.loginbox input {
+	border:none;
+	border-bottom:1px solid #000;
+	background:transparent;
+	outline:none;
+	height:26px;
+	color:#000;
+	margin-left:30px;
+	font-size:16px;
+	}
+	
+.loginbox input[type="submit"]{
+	border:none;
+	outline:none;
+	height:30px;
+	width:270px;
+	background:#00bfff;
+	margin-left:00px;
+	color:#fff;
+	font-size:18px;
+	<!---border-radius:20px;--->
+	}
+	
+.loginbox input[type="submit"]:hover{
+	cursor:pointer;
+	background:#0000ff;
+	color:#000;
+	}
+	.loginbox a{
+	color:#000;
+	text-decoration:none;
+	}
+.loginbox a:hover{
+	cursor:pointer;
+	background:#00bfff;
+	color:#000;
+}
+
+	
+</style>
+</head>
+<body>
+<div class="loginbox">
+<img src="logo1.png" class="user">
+<h1>Login here</h1>
+<form>
+
+<img src="logo3.jpg" class="ulogo1">
+<input type="text" name="userid" placeholder="Enter user name"><br>
+<img src="logo4.jpg" class="ulogo2">
+<input type="password" name="pass" placeholder="Enter password"><br>
+<input type="submit" value="login" name="sb">
+<a href="forgot.html">Forgot Password</a>
+<br><br>
+<a href="register.html">Register Yourself</a>
+</form>
+</div>
+
+
+</body>
+
+</html>

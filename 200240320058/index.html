@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home page</title>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{ 	
+	background:url(bg1.jpg);
+	background-repeat:no-repeat;
+	<!---background-size:cover;--->
+	background-position:center;
+	font-family:san-serif;
+	background-size: 100%;
+	}
+
+.menu-bar
+{
+	background:#46b2b4;
+	text-align:center;
+	color:#fff;
+}	
+
+.menu-bar ul
+{
+	display: inline-flex;
+	list-style:none;
+	color:#fff;
+}
+
+.menu-bar ul li
+{
+	width:150px;
+	margin:0;
+	padding:15px;
+}
+
+.menu-bar ul li a
+{
+	text-decoration:none;
+	color:#000;
+}
+
+.active,.menu-bar ul li:hover
+{
+	background-color:#6495ed;
+	border-radius:3px;
+}
+
+.sub-menu-1
+{
+		display:none;
+}
+
+.menu-bar ul li:hover .sub-menu-1
+{
+	display:block;
+	position:absolute;
+	background:#46b2b4;
+	margin-top:15px;
+	margin-left:10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+	display:block;
+	margin:10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+	width:160px;
+	padding:10px;
+	background:transparent;
+	border-radius:0;
+	text-align:left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{ 
+	color:#b4ff00;
+}
+
+</style>
+</head>
+<body>
+<div class="menu-bar">
+<ul> 
+<li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i><b>Home</b></a></li>
+<li><a href="#"><i class="fa fa-clone" aria-hidden="true"></i><b>Services</b></a>
+
+<div class="sub-menu-1">
+<ul>
+<li class="hover-me"><a href="#">Software Development</a></li>
+<li><a href="#">testing</a></li>
+<li><a href="#">application Services</a></li>
+<li><a href="#">IT Consulting</a></li>
+<li><a href="#">Managed IT Services</a></li>
+<li><a href="#">Infrastructure Services</a></li>
+<li><a href="#">Help Desk Services</a></li>
+</ul>
+</div>
+</li>
+<li><a href="#"><i class="fa fa-laptop" aria-hidden="true"></i><b>Technology</b></a>
+<div class="sub-menu-1">
+<ul>
+<li><a href="#">Internet Of Things(IOT)</a></li>
+<li><a href="#">Artificial Intelligence</a></li>
+<li><a href="#">Web technology</a></li>
+<li><a href="#">Big Data</a></li>
+<li><a href="#">java</a></li>
+<li><a href="#">My SQL</a></li>
+</ul>
+</div>
+</li>
+<li><a href="#"><b><i class="fa fa-user" aria-hidden="true"></i>About Us</b></a>
+<div class="sub-menu-1">
+<ul>
+<li><a href="#">Vision</a></li>
+<li><a href="#">Mission</a></li>
+
+
+</ul>
+</div>
+</li>
+<li><a href="#"><b><i class="fa fa-phone" aria-hidden="true"></i>Contact Us</b></a></li>
+<li><a href="login.html"><b><i class="fa fa-sign-in" aria-hidden="true"></i>login</b></a></li>
+</ul>
+</div>
+</body>
+</html>
