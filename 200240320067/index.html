@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Form</title>
+<style>
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+ body:before{
+            content: '';
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background-image: url("poochbg2.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            -webkit-filter: blur(5px);
+            -moz-filter: blur(5px);
+            -o-filter: blur(5px);
+            -ms-filter: blur(5px);
+            filter: blur(5px);
+			
+			
+			
+		
+        }
+		
+.main{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 400px;
+            height: 500px;
+            padding: 80px 40px;
+            box-sizing: border-box;
+			background:transparent;
+           opacity:0.5;
+        }
+
+.loginbox{
+width:500px;
+height:400px;
+background:#000;
+Color:#fff;
+top:50%;
+left:50%;
+position:absolute;
+transform:translate(-50%,-50%);
+box-sizing:border-box;
+padding:50px 30px;
+opacity:1;
+}
+.userimage{
+width:100px;
+height:120px;
+border-radius:50%;
+position:absolute;
+top:0;
+left:calc(50%-150px);
+}
+.loginbox input{
+width:100%;
+margin-bottom:20px;
+}
+h1{
+margin:0;
+padding:0 0 20px;
+text-align:center;
+font-size:22px;
+}
+.loginbox p{
+margin:0;
+padding:0;
+font-weight:bold;
+}
+.loginbox
+input[type="text"],input[type="password"]{
+border:none;
+border-bottom:1px solid #fff;
+background:transparent;outline:none;
+height:20px;
+color:#fff;
+font-size:16px;
+}
+.loginbox input[type="submit"]{
+border:none;
+outline:none;
+height:40px;
+background:#fb2525;
+color:#fff;
+font-size:18px;
+border-radius:20px;
+}
+.loginbox input[type="submit"]:hover{
+cursor:pointer;
+background:#ffc107;
+color:#000;
+}
+.loginbox a{
+text-decoration:none;
+font-size:14px;
+line-height:20px;
+color:darkgrey;
+}
+.loginbox a:hover{
+cursor:pointer;
+background:#ffc107;
+color:#000;
+}
+</style>
+</head>
+<body>
+<div class="main">
+<section>
+		<div class="loginbox">
+			<img src="C:\notepad++\dog1.jpg"class="userimage">
+				<div>
+				<h1>DOGS CARE CENTRE</h1>
+				<h1>Login Here</h1>
+				</div>
+			<form>
+				<p>Username</p>
+				<input type="text"name="u1"placeholder="Enter Username">
+				<p>Password</p>
+				<input type="password"name="p1"placeholder="Enter Password">
+				<input type="submit"name=""value="Login">
+				<br>
+				<a href="password.html">Forgot Password</a><br><br>
+				<a href="registration.html">Don't have an account?</a>
+			</form>
+		</div>
+	</section>
+</div>
+</body>
+</html>
+ 

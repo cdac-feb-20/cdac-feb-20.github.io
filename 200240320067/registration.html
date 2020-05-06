@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<style>
+
+body{
+	  margin:0;
+	  padding:0;
+	  background:url(finalregbg.jpg);
+	  background-size:cover;
+      font-family:san serif;
+	  min-height:40em;
+	  text-align:center;
+	  background-repeat:no-repeat;
+	  
+	  
+	  
+}
+	  
+
+ 
+
+
+
+h1{
+    margin:0;
+	padding:0 0 20px;
+	text-align:left;
+	font-size:22px;
+	text-align:center;
+}
+
+
+.loginbox{
+      width:400px;
+	  height:100%;
+	  background:none;
+	  color:#000;
+	  top:50%;
+	  left:70%;
+	  position:absolute;
+	  transform:translate(-50%,-50%);
+	  box-sizing:border-box;
+	  padding:70px 50px;
+}
+
+
+.loginbox  p{
+	       margin:0;
+		   padding:0;
+		   font-weight:bold;
+		   
+}
+
+.loginbox input[type="First Name"],
+       input[type="Last Name"],
+	   input[type="text"],
+	   input[type="Email"],
+	   input[type="Username"],
+	   input[type="Password"]
+	   
+{
+
+ 
+   border-bottom:1px solid #000;
+   size:25px;
+   color:#000;
+   height:20px;
+   font-size:16px;
+   width:100%
+  
+}
+
+.loginbox input[type="Date"]
+{
+ size:25px;
+ width:100%;
+ height:40;
+}
+
+.loginbox input[placeholder="First Name"]
+{
+
+color:white;
+}
+
+.loginbox  input[type="submit"],input[type="reset"]:hover
+{
+cursor:pointer;
+background:#ffc107;
+height:25px;
+color:#000;
+font-size:13px;
+}
+
+.loginbox  input[type="reset"]:hover
+{
+size:25px;
+cursor:pointer;
+background:red;
+color:yellow;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<div class="background-image"></div>
+<div class="content">
+<div class="loginbox">
+
+<h1>Register Here</h1>
+<form action="login.html">
+<table style="width:100%">
+ <tr>
+ <p>First Name</p>
+<input type="text" size=25 name="f1" placeholder ="Enter First name">
+</tr>
+ <tr>
+<p>Last Name</p>
+<input type="text" size=25 name="l1" placeholder ="Enter Last name">
+</tr>
+ <tr>
+<p>Gender</p>
+ 
+ <label class="radio-inline">
+    <input type="radio" name="optradio" checked>Male
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Female
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Other
+    </label>
+</tr>
+ <tr>
+<p>Date Of Birth</p>
+<input type="date" size=25 name="d1" placeholder="Enter DOB">
+</tr>
+ <tr>
+<p> Address</p>
+<input type="text" size=25 name="a1" placeholder="Enter Address">
+</tr>
+ <tr>
+ 
+
+<p>State</p>
+
+<input list="M"  size=25 placeholder="State"  style="width: 100%;">
+<datalist id="M">
+
+ 
+<option value = "AndamanandNicobarIslands"> 
+<option value= "Assam">
+<option value = "Bihar">
+<option value = "Chandigarh">
+<option value = "Chhattisgarh">
+<option value = "Dadar and Nagar Haveli">
+<option value = "Daman and Diu">
+<option value = "Delhi">
+<option value = "Lakshadweep">
+<option value = "Puducherry">
+<option value = "Goa">
+<option value = "Gujarat">
+<option value = "Haryana">
+<option value = "Himachal Pradesh">
+<option value = "Jammu and Kashmir">
+<option value = "Jharkhand">
+<option value = "Karnataka">
+<option value = "Kerala">
+<option value = "Madhya Pradesh">
+<option value = "Maharashtra">
+<option value = "Manipur">
+<option value = "Meghalaya">
+<option value = "Mizoram">
+<option value = "Nagaland">
+<option value = "Odisha">
+<option value = "Punjab">
+<option value = "Rajasthan">
+<option value = "Sikkim">
+<option value = "Tamil Nadu">
+<option value = "Telangana">
+<option value = "Tripura">
+<option value = "Uttar Pradesh">
+<option value = "Uttarakhand">
+<option value = "West Bengal">
+
+ </datalist>
+</tr>
+ <tr>
+<p>Country</p>
+<input list="My" size = 25 placeholder="country"  style="width: 100%;">
+<datalist id="My">
+
+ <option value="India">
+ <option value="USA">
+ <option value="UK">
+  <option value="Canada">
+ <option value="Japan">
+ <option value="Germany">
+ <option value="France">
+
+ </datalist>
+
+
+</tr>
+ <tr>
+
+<p>Email id</p>
+<input type="email" size=25 name="e1" placeholder="Enter Email id">
+</tr>
+ <tr>
+<p>Mobile No</p>
+<input type="text"  size=25  placeholder="Enter Mobile No">
+</tr>
+ <tr>
+
+<p>Username</p>
+<input type="text" size=25 name="u1" placeholder="Enter username">
+
+</tr>
+ <tr>
+<p>Password</p>
+<input type="password" size=25 name="p1" placeholder="Enter Password">
+</tr>
+ <tr>
+<p> Confirm Password</p>
+<input type="password" size=25 name="p1" placeholder="Enter Password">
+<br><br> 
+<input type="Submit" size=25 name="s1" value="Submit!!!"><br>
+<input type="reset" size=25 name="r1" value="Reset">
+
+<br><br><br>
+</tr>
+</table>
+</form>
+
+</div>
+
+</body>
+</html>
