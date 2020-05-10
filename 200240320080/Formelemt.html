@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+<head>
+<title>Form element</title>
+<style>
+	  body {
+	  	   width: 100%;
+	  	   background:url(pp8.jpg);
+	  	   background-attachment: fixed;
+	  	   background-position: center;
+	  	   background-repeat: no-repeat;
+	  	   background-size: cover;
+	  }
+	  h1{
+	  	color:white;
+	  	font-size:30px;
+	  	font-weight: bold;
+	  	font-family: serif;
+	  }
+	  table,td{
+	  	 color: white;
+	  	 border:1px;
+	  	 font-family: sans-serif;
+	  	 font-size: 15px;
+	     position: center;
+	     padding: 8px;
+	  }
+     .photobox{
+     	  width: 100;
+     	  height: 150;
+     
+     	  color :#000;
+     }
+     .img{
+      top:10%;
+      width:100px;
+      height:100px;
+      color:#f1f1f1;
+      border-radius: 50%;
+     }
+     h2{
+     	color: white;
+     	font-size:13px;
+     	font-family: sans-serif;
+     }
+     .input input[type="First Name"],input[type="Last Name"],,input[type="Adharcard Number"],input[type="Pancard Number"],input[type="text"],input[type="Email"],input[type="Username"],input[type="Password"]
+     {
+  
+       height: 20px;
+      <!--border:none;-->
+      <!--outline:none;-->
+      <!--border-bottom:1px solid white;-->
+      <!--background:transparent;-->
+      <!--color: #000;-->
+     
+     }
+     .input input[type="DATE"]{
+     	width: 95%;
+     	height: 40;
+     }
+     .input input[placeholder="First Name"]
+     { 
+     	color: white;
+     }
+     .input input[type="submit"],input[type="reset"]
+     {
+     	height: 25px;
+     	color: #000;
+     	font-size: 13px;
+     }
+     .input input[type="submit"]:hover
+     {
+     	cursor: pointer;
+     	background:red;
+     	color:yellow;
+     }
+     .input input[type="reset"]:hover
+     {
+     	cursor:pointer;
+     	background:red;
+     	color:yellow;
+     }
+ 
+</style>
+</head>
+<body>
+	<h1>Pleases Do Registration Here</h1>
+<div class="photobox">
+	<img src="user1.png" width=200px height=150px class="img">
+</div>
+<fieldset style="width: 300px">
+<legend style="color: black">You are new user</legend>
+<div class="input">
+<form>
+<pre>
+<table>
+   <tr>
+    <td>First Name:</td>
+    <td><input type="First Name" name="name" size=20 placeholder="First Name" title="First Name"></td>
+</tr>
+<tr>
+    <td>Last Name:</td>
+    <td><input type="Last Name" name="Last Name" size=20 placeholder="Last Name" title="Last Name"></td>
+   </tr>
+  <td>Gender:</td>
+  <td><input type="radio" name="r1" checked="" title="Male">Male <input type="radio" name="r1" title="Female">Female </td>
+  </tr>
+  	<tr>
+   <td>Address:</td>
+   <td><textarea placeholder="Address" title="Address"></textarea></td>
+   <tr>
+   <td>Date of birth:</td> 
+   <td><input type="DATE" name="Date of birth" size=40 placeholder="Date of birth" title="Date of birth"></td>
+</tr>
+<tr>
+	<td>Adharcard Number:</td>
+	<td><input type="text" name="Adharcard Number" placeholder="Adharcard Number" title="Adharcard"></td>
+</tr>
+<tr>
+	<td>Pancard Number:</td>
+	<td><input type="text" name="Pancard Number" placeholder="Pancard Number" title="Pancard"></td>
+</tr>
+<tr>
+   <td>Mobile Number:</td>
+   <td><input type="text" size=20 placeholder="Mobile Number" title="Mobile Number"></td>
+  </tr>
+  <tr>
+   <td>Email address:</td>
+   <td><input type="Email" name="Email" placeholder="Email" title="Email"></td><br>
+</tr>
+<tr>
+	<td>Country:</td>
+	<td><input list="My" placeholder="Country" title="Country"><datalist id="My">
+		<option value="Afghanistan">
+	    <option value="Australia">
+	    <option value="Bangladesh">
+	    <option value="Brazil">
+  <option value="Canada">
+  <option value="China">
+  <option value="Germary">
+  <option value="Iceland">
+  <option value="India">
+  <option value="Iran">
+  <option value="Israel">
+  <option value="Italy">
+  <option value="Japan">
+  <option value="Mexico">
+  <option value="Nepal">
+  <option value="New Zealand">
+  <option value="Qatar">
+  <option value="Russia">
+  <option value="South Africa">
+  <option value="Sri Lanka">
+  <option value="Switzerland">
+  <option value="Thailand">
+  <option value="Vietnam">
+  <option value="Yemen">
+  <option value="Zimbabwe">
+	</datalist></td>
+</tr>
+<tr>
+	<td>State:</td>
+	<td><input list="M" placeholder="State" title="State"><datalist id="M">
+	    <option value="Andaman and Nicobar Islands">
+	    <option value="ANndhra pradesh">
+	    <option value="Arunachal pradesh">
+	    <option value="Assam">
+	    <option value="Bihar">
+	    <option value="Chandigarh">
+	    <option value="chhattisgarh">
+        <option value="dadra and Nagar Haveli and Daman and Diu">
+  <option value="National Capital Territory of Delhi">
+  <option value="Goa">
+  <option value="Gujrat">
+  <option value="Haryana">
+  <option value="Himachal Pradesh">
+  <option value="Jammu and kashmir">
+  <option value="Jharkhand">
+  <option value="karnataka">
+  <option value="kerala">
+  <option value="ladakh">
+  <option value="lakshadweep">
+  <option value="Madhya Pradesh">
+  <option value="Maharashtra">
+  <option value="Manipur">
+  <option value="Meghalaya">
+  <option value="Mizoram">
+  <option value="Nagaland">
+  <option value="Odhisa">
+  <option value="Puducherry">
+  <option value="Punjab">
+  <option value="Rajasthan">
+  <option value="Skkim">
+  <option value="Tamil Nadu">
+  <option value="Telengana">
+  <option value="Tripura">
+  <option value="Uttar pradesh">
+  <option value="Uttarakhand">
+  <option value="West Bengal">
+	</datalist></td>
+</tr>
+<tr>
+  <td>Username:</td>
+  <td><input type="Username" name="Username" placeholder="Username" title="Username">
+ </td>
+</tr>
+<tr>
+  <td>Password:</td>
+  <td><input type="Password" name="Password" placeholder="Password" title="Password"></td>
+</tr>
+<tr>
+  <td>Retype Password:</td>
+  <td><input type="Password" name="Password" placeholder="Retype Password" title="Retype Password"></td>
+</tr>
+<tr>
+  <td ><input type="reset" title="Reset"></td>
+  <td><input type="submit" value ="Login" title="Login"></td>
+ </tr>
+</table>
+ </pre>
+ </from>
+</div>
+</fieldset>
+ </body>
+ </html>

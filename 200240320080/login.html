@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Form</title>
+<style>
+  body{
+    margin: 1;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 20px;
+    background-image:url(pp6.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+
+
+  }
+  .loginbox{
+     width: 370px;
+     height: 510px;
+     background:linear-gradient(to right,pink,yellow,#f1f1f1);
+     color: #000;
+    top:25%;
+    left:70%;
+    background-size: cover;
+    background-attachment: fixed;
+     position: absolute;
+     box-sizing: border-box;
+     padding: 100px 30px;
+     border-radius:5%;
+
+  }
+  .user1 {
+    width:100px;
+    height:100px;
+    top:20%;
+    background :blue;
+    border-radius: 50%;
+    position: absolute;
+    top :2px;
+    left:35%; 
+  }
+  .loginbox input{
+    width: 100%;
+  }
+  h1{
+    margin:0;
+    padding:20px;
+    text-align:center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: serif;
+  }
+.loginbox p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.loginbox input[type="text"],input[type="Password"]
+{   
+  height: 30px;
+  border: 1px solid black;
+    border-bottom: black;
+    font-size: 17px;
+  border-bottom:1px solid #fff;
+}
+table,td {
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.loginbox input[type="submit"],input[type="reset"]
+{
+  width: 100%;
+  height: 32px;
+  font-size: 17px;
+  border-radius:30px;
+}
+.loginbox input[type="submit"]:hover
+{
+  cursor: pointer;
+  background:forestgreen;
+  color:white;
+ transition: 0.4s ease;
+}
+.loginbox input[type="reset"]:hover
+{
+  cursor: pointer;
+  background:forestgreen;
+  color:white;
+  transition: 0.4s ease;
+}
+.ioginbox a
+{   
+  color: blue;
+  font-size:50px;
+  font-family: serif;
+  font-weight:bold;
+  position: fixed;
+
+}
+.loginbox a:hover
+{ 
+  cursor: pointer;
+  color: black;
+  transition: 0.4s ease;
+}
+</style>
+</head>
+<body>
+<div class="loginbox">
+   	 <img src="user1.png" width=400px height=300px class="user1">
+      <h1>Login Here</h1>
+
+<form>
+	<table id="i2" >
+    <tr>
+       <td>Username:</td>
+    </tr>
+   <tr>
+	 <td><input type="text" name="username" size=25 placeholder="Username"></td>
+   </tr>
+   <tr>
+	 <td>Password:</td>
+   </tr>
+   <tr>
+	 <td><input type="Password" name="PWD" size=25 placeholder="Password"></td>
+   </tr>
+   <tr>
+    <td><input type="submit" size=25 value="Login"></td>
+   </tr>
+   <tr>
+     <td><input type="reset" size=25></td>
+   </tr>
+</table>
+ <a href="forgetpassword.html">forget passwod</a><br><br>
+ <a href="formelemt.html">create account</a>
+</form>
+</div>
+</body>
+</html>
