@@ -1,142 +1,224 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Login Form</title>
+<title>Home page</title>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-*
-{
-	padding: 0;
-	margin: 0;
-}
+body{
 
- body:before{
-            content: '';
-            position: fixed;
-            width: 100vw;
-            height: 100vh;
-            background-image: url("poochbg2.jpg");
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-            -webkit-filter: blur(5px);
-            -moz-filter: blur(5px);
-            -o-filter: blur(5px);
-            -ms-filter: blur(5px);
-            filter: blur(5px);
-			
-			
-			
-		
-        }
-		
-.main{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            width: 400px;
-            height: 500px;
-            padding: 80px 40px;
-            box-sizing: border-box;
-			background:transparent;
-           
-        }
-
-.loginbox{
-width:500px;
-height:400px;
-background:#000;
-Color:#fff;
-top:50%;
-left:50%;
-position:absolute;
-transform:translate(-50%,-50%);
-box-sizing:border-box;
-padding:50px 30px;
-opacity:1;
-}
-.userimage{
-width:100px;
-height:120px;
-border-radius:50%;
-position:absolute;
-top:0;
-left:calc(50%-150px);
-}
-.loginbox input{
-width:100%;
-margin-bottom:20px;
-}
-h1{
-margin:0;
-padding:0 0 20px;
-text-align:center;
-font-size:22px;
-}
-.loginbox p{
-margin:0;
+margin:1;
 padding:0;
-font-weight:bold;
+background : url("home3.png") no-repeat; 
+background-size:100%;
+background-position:center;
+font-family:sans-serif;
+min-height: 40em;
+
 }
-.loginbox
-input[type="text"],input[type="password"]{
-border:none;
-border-bottom:1px solid #fff;
-background:transparent;outline:none;
-height:20px;
+
+.campanylogo{
+
+width:0;
+height:0;
+margin-left:30px;
+margin-top:1%;
+
+
+}
+
+.n b{
+position:absolute;
+width:0;
+height:0;
+margin-left:25px;
+margin-top:80px;
+color:#fff;
+text-shadow: 1px 2px orange;
+}
+
+.search input[type="text"]{
+background:transparent;
+height:30px;
+width:700px;
 color:#fff;
 font-size:16px;
-}
-.loginbox input[type="submit"]{
-border:none;
-outline:none;
-height:40px;
-background:#fb2525;
-color:#fff;
-font-size:18px;
+margin-left:45%;
+margin-top:1%;
 border-radius:20px;
+padding-left:20px;
+border-style:solid;
+border-color:#fff;
 }
-.loginbox input[type="submit"]:hover{
-cursor:pointer;
-background:#ffc107;
-color:#000;
+
+
+
+p{
+
+position:absolute;
+width:300px;;
+height:50px;
+margin-left:25px;
+margin-top:100px;
+color:#fff;
+font-size:20px;
+text-shadow:1px 2px orange;
 }
-.loginbox a{
+
+.fa-search{
+position:absolute;
+top:33px;
+color:#fff;
+margin-left:95%;
+font-size:21px;
+
+}
+ 
+::placeholder{
+
+color:#fff;
+}
+
+.menu-bar
+{
+margin-top:1%;
+text-align:center;
+margin-left:580px;
+
+height:55px;
+background-color:rgb(255,140,0);
+opacity:0.7;
+
+}
+
+.menu-bar ul
+{
+display: inline-flex;
+list-style:none;
+}
+
+.menu-bar ul li
+{
+width:110px;
+padding:5px;
+}
+
+.menu-bar ul li a
+{
 text-decoration:none;
-font-size:14px;
-line-height:20px;
-color:darkgrey;
+color:#fff;
+
+
 }
-.loginbox a:hover{
-cursor:pointer;
-background:#ffc107;
-color:#000;
+
+.active,.menu-bar ul li:hover
+{
+background-color:rgb(255,140,0);
+border-radius:3px;
+height:15px;
+margin-top:5px;
+
 }
+
+.sub-menu-1
+{
+display:none;
+
+}
+
+.menu-bar ul li:hover .sub-menu-1
+{
+display:block;
+position:absolute;
+background:gray;
+margin-top:3px;
+margin-left:10px;
+background-color:rgb(255,140,0);
+
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+display:block;
+margin-left:10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+width:200px;
+padding:10px;
+background:transparent;
+border-radius:0;
+text-align:left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+color:black;
+}
+
+
 </style>
 </head>
 <body>
-<div class="main">
-<section>
-		<div class="loginbox">
-			<img src="dog1.jpg"class="userimage">
-				<div>
-				<h1>DOGS CARE CENTRE</h1>
-				<h1>Login Here</h1>
-				</div>
-			<form>
-				<p>Username</p>
-				<input type="text"name="u1"placeholder="Enter Username">
-				<p>Password</p>
-				<input type="password"name="p1"placeholder="Enter Password">
-				<input type="submit"name=""value="Login">
-				<br>
-				<a href="password.html">Forgot Password</a><br><br>
-				<a href="registration.html">Don't have an account?</a>
-			</form>
-		</div>
-	</section>
+<div class="campanylogo">
+<img src="logo.jpg" class="user">
 </div>
+<div class="n">
+<b>DOCTOPIA</b>
+</divcampany
+<div class="campanyname">
+<p><strong>The dog care centre</strong></p>
+</div>
+<div class="search">
+<input type="text" name="Fname" placeholder="search here"><br>
+<i class="fa fa-search" aria-hidden="true"></i>
+
+</div>
+<div class="menu-bar">
+<ul>
+<li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i><b>Home</b></a></li>
+<li><a href="#"><i class="fa fa-clone" aria-hidden="true"></i><b>Services</b></a>
+
+<div class="sub-menu-1">
+<ul>
+<li class="hover-me"><a href="#">Health Services</a></li>
+<li><a href="#">Breeds</a></li>
+<li><a href="#">Custom software Development</a></li>
+<li><a href="#">Foods</a></li>
+<li><a href="#">Exercise toys</a></li>
+<li><a href="#">Photography</a></li>
+<li><a href="#">Boutique</a></li>
+<li><a href="#">Salon</a></li>
+</ul>
+</div>
+</li>
+<li><a href="#"><i class="fa fa-laptop" aria-hidden="true"></i><b>Technology</b></a>
+<div class="sub-menu-1">
+<ul>
+<li><a href="#">Dog Tracking Collars</a></li>
+<li><a href="#">Dog Sitting</a></li>
+<li><a href="#">Activity Tracking Apps</a></li>
+<li><a href="#">Games</a></li>
+<li><a href="#">Budget Apps</a></li>
+</ul>
+</div>
+</li>
+<li><a href="#"><b><i class="fa fa-user" aria-hidden="true"></i>About Us</b></a>
+<div class="sub-menu-1">
+<ul>
+<li><a href="vision.html">Vision</a></li>
+<li><a href="value.html">Mission</a></li>
+
+
+</ul>
+</div>
+</li>
+<li><a href="#"><b><i class="fa fa-phone" aria-hidden="true"></i>Contact Us</b></a></li>
+<li><a href="#"><b><i class="fa fa-question-circle" aria-hidden="true"></i>FAQ'S</b></a></li>
+<li><a href="login.html"><b><i class="fa fa-sign-in" aria-hidden="true"></i>login</b></a></li>
+</ul>
+</div>
+<div class="slide_image">
 </body>
 </html>
- 
+

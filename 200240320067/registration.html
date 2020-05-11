@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,242 +7,231 @@
 <style>
 
 body{
+	
 	  margin:0;
 	  padding:0;
-	  background:url(finalregbg.jpg);
+	  background-image:url("regisbg.jpg");
 	  background-size:cover;
-      font-family:san serif;
-	  min-height:40em;
-	  text-align:center;
+     	 
+
+		 
+		 
 	  background-repeat:no-repeat;
-	  
-	  
-	  
+	 
+
+	
+	
+	
 }
-	  
-
- 
-
-
-
-h1{
-    margin:0;
-	padding:0 0 20px;
-	text-align:left;
-	font-size:22px;
-	text-align:center;
-}
-
-
-.loginbox{
-      width:400px;
-	  height:100%;
-	  background:none;
-	  color:#000;
-	  top:50%;
+.registrationbox{
+	 width:500px;
+	  height:700px;
+	  background:#000;
+	  color:#fff;
+	  top:49%;
 	  left:70%;
 	  position:absolute;
 	  transform:translate(-50%,-50%);
 	  box-sizing:border-box;
-	  padding:70px 50px;
+	  padding:05px 80px;
+	  
+	  
+	
+}
+.registrationbox input{
+	width:100%;
+	margin-bottom:20px;
 }
 
 
-.loginbox  p{
-	       margin:0;
-		   padding:0;
-		   font-weight:bold;
-		   
+.registrationbox p{
+	margin:0;
+	padding:0;
+	font-weight:bold;
+	}
+.registrationbox input[type="text"],[type="password"],[type="email"],[type="number"]{
+	border:none;
+	border-bottom:1px solid #fff;
+	background:transparent;outline:none;
+	height:40px;
+	color:#fff;
+    font-size:16px;}
+	
+.registrationbox input[type="submit"]{
+	border:none;
+	outline:none;
+	height:40px;
+	background:#fb2525;
+	color:#fff;
+	font-size:18px;
+	border-radius:20px;
+}
+.registrationbox input[type="submit"]:hover{
+	cursor:pointer;
+	background:#ffc107;
+	color:#000;
+}
+.registrationbox input[type="reset"]{
+	border:none;
+	outline:none;
+	height:40px;
+	background:#fb2525;
+	color:#fff;
+	font-size:18px;
+	border-radius:20px;
+}
+.registrationbox input[type="reset"]:hover{
+	cursor:pointer;
+	background:#ffc107;
+	color:#000;
 }
 
-.loginbox input[type="First Name"],
-       input[type="Last Name"],
-	   input[type="text"],
-	   input[type="Email"],
-	   input[type="Username"],
-	   input[type="Password"]
-	   
-{
-
- 
-   border-bottom:1px solid #000;
-   size:25px;
-   color:#000;
-   height:20px;
-   font-size:16px;
-   width:100%
-  
+.registrationbox a{
+	text-decoration:none;
+	font-size:14px;
+	line-height:20px;
+	color:white;
 }
 
-.loginbox input[type="Date"]
-{
- size:25px;
- width:100%;
- height:40;
-}
-
-.loginbox input[placeholder="First Name"]
-{
-
-color:white;
-}
-
-.loginbox  input[type="submit"],input[type="reset"]:hover
-{
-cursor:pointer;
-background:#ffc107;
-height:25px;
-color:#000;
-font-size:13px;
-}
-
-.loginbox  input[type="reset"]:hover
-{
-size:25px;
-cursor:pointer;
-background:red;
-color:yellow;
-}
-
-
-
-
+.registrationbox a:hover{	
+	cursor:pointer;
+	background:#ffc107;
+	color:#000;
+	}
+.table td
+	{
+		font-size:20px;
+		color:white;
+	}
 </style>
 </head>
 <body>
+        
+	
+		 <div class="registrationbox">
+			
+			<h1 style="color:white">Register Here</h1>
+			<form action="login.html">
+			<table class="table">
+			<tr>
+					<td>First Name:</td>
+					<td><input type="text" name="name" placeholder="First Name"></td>
+			</tr>
+			<tr>	
+					<td>Last Name:</td>
+					<td><input type="text" name="ul" placeholder="Last Name"></td>
+			</tr>
 
+			<tr>
+			        
+					<td><label for="Gender">Gender :</label></td>
+				    <td><select id="Gender" name="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+					<option value="Other">Other</option>
+					</select></td>
+					
+</tr>					
+					
+			
+			<tr>
+		
+					<td><label for="Number"> Mobile number:</label></td>
+					<td><input type="Number" id="Number" name="Number" placeholder="Enter Mobile Number"></td>
+			</tr>
+			
+			<tr>
+		
+					<td><label for="email">Enter your email:</label></td>
+					<td><input type="email" id="email" name="email" placeholder="abc@gmail.com"></td>
+			</tr>
+			
+			
+			
+			<tr>
+					<td><label for="DOB">DOB:</label></td>
+					<td><input type="date" id="DOB" name="DOB"></td>		
+	
+			   </tr>
+			 <tr>
+			  <td> <label for="city">City:</label></td>
+				  <td><select id="city" name="city">
+					<option value="Nagpur">Nagpur</option>
+					<option value="Pune">Pune</option>
+					<option value="Mumbai">Mumbai</option>
+					<option value="Amravati">Amravati</option>
+                     </select></td>
+			</tr>
+			<tr>
+			  <td> <label for="state">State:</label></td>
+				  <td><select id="state" name="state" placeholder="state">
+					
+<option value= "Assam">Assam</option>
+<option value = "Bihar">Bihar</option>
+<option value = "Chandigarh">Chandigarh</option>
+<option value = "Chhattisgarh">Chhattisgarh</option>
+<option value = "Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+<option value = "Daman and Diu">Daman and Diu</option>
+<option value = "Delhi">Delhi</option>
+<option value = "Lakshadweep">Lakshadweep</option>
+<option value = "Puducherry">Puducherry</option>
+<option value = "Goa">Goa</option>
+<option value = "Gujarat">Gujarat</option>
+<option value = "Haryana">Haryana</option>
+<option value = "Himachal Pradesh">Himachal Pradesh</option>
+<option value = "Jammu and Kashmir">Jammu and Kashmir</option>
+<option value = "Jharkhand">Jharkhand</option>
+<option value = "Karnataka">Karnataka</option>
+<option value = "Kerala">Kerala</option>
+<option value = "Madhya Pradesh">Madhya Pradesh</option>
+<option value = "Maharashtra">Maharashtra</option>
+<option value = "Manipur">Manipur</option>
+<option value = "Meghalaya">Meghalaya</option>
+<option value = "Mizoram">Mizoram</option>
+<option value = "Nagaland">Nagaland</option>
+<option value = "Odisha">Odisha</option>
+<option value = "Punjab">Punjab</option>
+<option value = "Rajasthan">Rajasthan</option>
+<option value = "Sikkim">Sikkim</option>
+<option value = "Tamil Nadu">Tamil Nadu</option>
+<option value = "Telangana">Telangana</option>
+<option value = "Tripura">Tripura</option>
+<option value = "Uttar Pradesh">Uttar Pradesh</option>
+<option value = "Uttarakhand">Uttarakhand</option>
+<option value = "West Bengal">West Bengal</option>
 
-<div class="background-image"></div>
-<div class="content">
-<div class="loginbox">
-
-<h1>Register Here</h1>
-<form action="login.html">
-<table style="width:100%">
- <tr>
- <p>First Name</p>
-<input type="text" size=25 name="f1" placeholder ="Enter First name">
-</tr>
- <tr>
-<p>Last Name</p>
-<input type="text" size=25 name="l1" placeholder ="Enter Last name">
-</tr>
- <tr>
-<p>Gender</p>
- 
- <label class="radio-inline">
-    <input type="radio" name="optradio" checked>Male
-    </label>
-    <label class="radio-inline">
-      <input type="radio" name="optradio">Female
-    </label>
-    <label class="radio-inline">
-      <input type="radio" name="optradio">Other
-    </label>
-</tr>
- <tr>
-<p>Date Of Birth</p>
-<input type="date" size=25 name="d1" placeholder="Enter DOB">
-</tr>
- <tr>
-<p> Address</p>
-<input type="text" size=25 name="a1" placeholder="Enter Address">
-</tr>
- <tr>
- 
-
-<p>State</p>
-
-<input list="M"  size=25 placeholder="State"  style="width: 100%;">
-<datalist id="M">
-
- 
-<option value = "AndamanandNicobarIslands"> 
-<option value= "Assam">
-<option value = "Bihar">
-<option value = "Chandigarh">
-<option value = "Chhattisgarh">
-<option value = "Dadar and Nagar Haveli">
-<option value = "Daman and Diu">
-<option value = "Delhi">
-<option value = "Lakshadweep">
-<option value = "Puducherry">
-<option value = "Goa">
-<option value = "Gujarat">
-<option value = "Haryana">
-<option value = "Himachal Pradesh">
-<option value = "Jammu and Kashmir">
-<option value = "Jharkhand">
-<option value = "Karnataka">
-<option value = "Kerala">
-<option value = "Madhya Pradesh">
-<option value = "Maharashtra">
-<option value = "Manipur">
-<option value = "Meghalaya">
-<option value = "Mizoram">
-<option value = "Nagaland">
-<option value = "Odisha">
-<option value = "Punjab">
-<option value = "Rajasthan">
-<option value = "Sikkim">
-<option value = "Tamil Nadu">
-<option value = "Telangana">
-<option value = "Tripura">
-<option value = "Uttar Pradesh">
-<option value = "Uttarakhand">
-<option value = "West Bengal">
-
- </datalist>
-</tr>
- <tr>
-<p>Country</p>
-<input list="My" size = 25 placeholder="country"  style="width: 100%;">
-<datalist id="My">
-
- <option value="India">
- <option value="USA">
- <option value="UK">
-  <option value="Canada">
- <option value="Japan">
- <option value="Germany">
- <option value="France">
-
- </datalist>
-
-
-</tr>
- <tr>
-
-<p>Email id</p>
-<input type="email" size=25 name="e1" placeholder="Enter Email id">
-</tr>
- <tr>
-<p>Mobile No</p>
-<input type="text"  size=25  placeholder="Enter Mobile No">
-</tr>
- <tr>
-
-<p>Username</p>
-<input type="text" size=25 name="u1" placeholder="Enter username">
-
-</tr>
- <tr>
-<p>Password</p>
-<input type="password" size=25 name="p1" placeholder="Enter Password">
-</tr>
- <tr>
-<p> Confirm Password</p>
-<input type="password" size=25 name="p1" placeholder="Enter Password">
-<br><br> 
-<input type="Submit" size=25 name="s1" value="Submit!!!"><br>
-<input type="reset" size=25 name="r1" value="Reset">
-
-<br><br><br>
-</tr>
-</table>
-</form>
-
-</div>
-
-</body>
+                     </select></td>
+			</tr>
+			<tr>
+			  <td> <label for="country">Country:</label></td>
+				  <td><select id="country" name="country">
+					<option value="India">India</option>
+					 <option value="USA">USA</option>
+					 <option value="UK">UK</option>
+					  <option value="Canada">Canada</option>
+					 <option value="Japan">Japan</option>
+					 <option value="Germany">Germany</option>
+					 <option value="France">France</option>
+                     </select></td>
+			</tr>
+			<tr>
+		
+					<td><label for="password">Create <br> Password:</label></td>
+					<td><input type="password" id="password" name="password" placeholder="Enter Password" title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." required></td>
+			</tr>
+			<tr>
+		
+					<td><label for="password">Confirm password:</label></td>
+					<td><input type="password" id="password" name="password" placeholder="Confirm Password" title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." required></td>
+			</tr>
+			
+			   <tr>
+					<td><input type="submit" name="Submit" value="Submit"></td>
+			        <td><input type="reset" name="reset" value="Reset"></td>
+		
+             </table>
+			</form>
+		 </div>
+		 
+	</body>
 </html>
