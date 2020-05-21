@@ -1,0 +1,286 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+body{
+
+
+background-color:black;
+background-size:100%;
+background-position:center;
+font-family:sans-serif;
+min-height: 40em;
+
+
+
+}
+
+.campanylogo{
+
+width:0;
+height:0;
+margin-left:30px;
+margin-top:1%;
+
+
+}
+
+.n b{
+position:absolute;
+width:0;
+height:0;
+margin-left:25px;
+margin-top:80px;
+color:#fff;
+text-shadow: 1px 2px orange;
+}
+
+.search input[type="text"]{
+background:transparent;
+height:30px;
+width:700px;
+color:#fff;
+font-size:16px;
+margin-left:45%;
+margin-top:1%;
+border-radius:20px;
+padding-left:20px;
+border-style:solid;
+border-color:#fff;
+}
+
+
+
+.campanyname p{
+
+position:absolute;
+width:300px;;
+height:50px;
+margin-left:25px;
+margin-top:100px;
+color:#fff;
+font-size:20px;
+text-shadow:1px 2px orange;
+}
+
+.fa-search{
+position:absolute;
+top:33px;
+color:#fff;
+margin-left:95%;
+font-size:21px;
+
+}
+ 
+::placeholder{
+
+color:#fff;
+}
+
+.menu-bar
+{
+margin-top:1%;
+text-align:center;
+margin-left:580px;
+width:61%;
+height:55px;
+background-color:rgb(255,140,0);
+opacity:0.7;
+
+}
+
+.menu-bar ul
+{
+display: inline-flex;
+list-style:none;
+}
+
+.menu-bar ul li
+{
+width:110px;
+padding:5px;
+}
+
+.menu-bar ul li a
+{
+text-decoration:none;
+color:#fff;
+
+
+}
+
+.active,.menu-bar ul li:hover
+{
+background-color:rgb(255,140,0);
+border-radius:3px;
+height:15px;
+margin-top:5px;
+
+}
+
+.sub-menu-1
+{
+display:none;
+
+}
+
+.menu-bar ul li:hover .sub-menu-1
+{
+display:block;
+position:absolute;
+margin-top:3px;
+margin-left:10px;
+background-color:rgb(255,140,0);
+
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+display:block;
+margin-left:10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+width:200px;
+padding:10px;
+background:transparent;
+border-radius:0;
+text-align:left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+color:black;
+}
+.data p{
+	font-family:sans-serif;
+
+	color:white;
+	/* font-size:100%; */
+	padding:20px;
+text-align: justify;
+}
+.data{
+	position:absolute;
+	width:10 %;
+	margin: 90px 0 0 100px;
+	color: white;
+	padding:1px;
+	top:20%;
+	margin-top: 100px;
+	text-align: justify;
+	font-size:20px;
+	/*display:flex;*/	
+}
+
+	.container{
+align-items:center;
+	}
+.name{
+	position:absolute;
+	left:7%;
+	top:8%;
+    color:rgb(255,140,0);
+	
+}
+.name h1{
+	color:rgb(255,140,0);
+	font-family:sans-serif;
+	font-size:200%;
+	padding:1px;
+	top:5%;
+	margin-top: 100px;
+	text-align:center;
+	/*text-decoration:underline;*/
+	
+
+}
+.slider
+{ 
+ overflow: hidden; 
+  height: 250px; 
+   width: 250px;
+    top: 50%; 
+    left: 10%; 
+     background-color: rgba(255,127,80,0.50);  position: absolute;
+   }
+.slider figure div
+{
+ float: left; 
+  width: 50%;
+}
+.slider figure img
+{
+ float: left;  width: 100%;
+}
+.slider figure
+{
+ position: relative;
+ width: 500%; 
+
+  margin: 0px; 
+   left: 0; 
+    animation: 20s 
+    nidhi infinite;
+    }
+    @keyframes nidhi
+    {  0%
+      {   left: 0%; 
+
+        }   10%
+        {    left: 0%; 
+          } 12%
+          {    left: -100%; 
+           } 22%
+           {   
+            left: -200%; 
+            } 24%
+            {    left: -200%;
+              } 34%
+              {    left: -200%; 
+               } 36%
+               {    left: -300%;
+                 } 46%
+                 {    left: -300%; 
+                  } 48%
+                  {    left: -400%; 
+                   } 58%
+                   {    left: -400%;
+                     } 60%
+                     {    left: -300%; 
+                      } 70%
+                      {    left: -300%; 
+                       } 72%
+                       {    left: -200%;
+                         } 82%
+                         {    left: -200%;  
+                          } 84%
+                          {    left: -100%; 
+                           } 94%
+                           {    left: -100%; 
+                            } 96%
+                            {    left: -0%; 
+                             }
+                              }
+
+
+footer {
+	position:relative;
+  text-align: center;
+  padding: 3px;
+  background-color:rgb(255,140,0);
+  color: white;
+  margin-top:60%;
+ 
+  opacity:0.7;
+    bottom:0;
+  width:100%;
+  height:10%;
+  left:0;
+
+
+	 
+	  
+}
