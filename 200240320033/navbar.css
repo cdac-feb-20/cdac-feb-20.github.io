@@ -1,0 +1,72 @@
+body
+{
+background-image: url("music.jpg");
+background-repeat: no-repeat;
+background-position: cover;
+background-size: cover;
+}
+ .menubar ul
+
+ {
+  padding: 0%;
+  
+ }
+ .menubar ul li
+ {
+     float: left;
+     background-color:black;
+     color: white;
+     width: 220px;
+     height: 40px;
+     text-align: center;
+     font-family: sans-serif;
+     font-size:17px;
+     list-style: none;
+     height: 50px;
+     line-height: 50px;
+    padding-left: 5px;
+     
+    
+ }
+
+ .menubar ul li ul
+ {
+     display: none;
+ }
+
+ .menubar ul li:hover>ul
+ {
+
+   display: block;
+   font-size: 17px;
+ }
+
+ .menubar ul li:hover
+ {
+   background-color: teal;
+
+ }
+ .menubar ul li ul li
+ {
+   position: relative;
+ }
+ .menubar ul li ul li ul
+ {
+   position: absolute;
+   left: 220px;
+   transition-duration: 5sec;
+ }
+
+ .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: cadetblue;
+  color: white;
+  text-align: center;
+}
+.menubar a
+{
+  color: aliceblue;
+}

@@ -1,0 +1,83 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-image: url("logiimg.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+ .signinbox
+ {   padding: 70px 30px ;
+     width: 320px;
+     height: 470px;
+     background: rgb(0, 0, 0);
+     color:#fff;
+     top: 50%;
+     left: 50%;
+     position:absolute;
+     transform: translate(-50%,-50%);
+     box-sizing:border-box;
+     animation: dhawal 2s infinite;
+     border-radius: 10px;
+ }
+ @keyframes dhawal {
+    20% {box-shadow: 12px 12px 10px cyan,18px 18px black;}
+  }
+
+ .avatar
+ {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    left: calc(50% - 50px);
+ }
+ h1
+ {
+   margin: 14px;
+   padding: 0px 0px 15px;
+   text-align: center;
+   font-size: 25px ;
+ }
+.signinbox a
+{
+  margin-left: 25px;
+ color: white;
+}
+.signinbox p
+{
+    font-weight: bold;
+}
+.signinbox input
+{
+    
+float: left;
+ clear: none;
+ margin: 2px 0px 0px 2px;
+ position: relative;
+  
+   padding: 5px;
+   margin-left: 0px;
+   margin-right: 0px;
+   margin-bottom: 10px;
+   font-size: 15px; 
+}
+.signinbox input[type="submit"]
+{
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: tomato;
+    outline: none;
+    border: none;
+    margin-left:6px ;
+}
+.signinbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: royalblue;
+    color: seashell;
+}
