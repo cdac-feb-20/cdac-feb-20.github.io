@@ -1,0 +1,34 @@
+body{
+    background: url(back2.jpg);
+}
+header{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    background: transparent;
+   color: Mediumvioletred;
+}
+p{
+    font-size: 35px;
+    font: arial;
+}
+main{
+    margin-left: 10%;
+}
+.back{
+      background: gray;
+}
+.box{
+    margin-right: 30;
+    display: block;
+    float: left;
+   width: 15%;
+    height: 35;
+    padding: 5px;
+    padding-left: 10px;   
+}
+img{
+    border-radius: 5px;
+  width: 100%;
+}

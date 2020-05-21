@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    
+    .myslides (display:none;)
+    .checked{
+        color: orangered;
+    }
+    .dropdown{
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .dropdown-content{
+        display: none;
+       z-index: 1;
+        position: absolute;
+        background-color: #f1f3f6;
+        min-width: 120px;
+        box-shadow: 0px 8px 36px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        //color: white;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+     .zoom{
+        transition: transform 1s;
+    }
+    .zoom:hover{
+        transform: scale(1.4);
+    }
+    
+   
+</style>
+<title>Kalyan Jewellers</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body bgcolor="papayawhip">
+    
+<table border="0" width="100%"  bgcolor="crimson" height="9%" >
+<tr>
+<td align="right"><img src="j.jpg"></td>    
+ <td><input type="text" placeholder="Search for products,Brands and More" style="width: 550px; height: 30px;">
+    <input type="button" value="Search" height="35px" style="width: 85px;height: 33px;">
+    </td>    
+    <th><h3><a href= "Logpage.html" style="color: white;text-decoration: none" >Login & SignUp</a></h3></th>
+    <th><font color="#fff"><h3>More</h3></font></th>  
+    <th><font color="#fff"><h3>Cart</h3></font></th>  
+</tr>
+</table>
+ <br>   
+<table border="0" height="8%" width="100%"  bgcolor="#F1F3F6">
+<tr>
+    <th width="12.5%"><h3>Home</h3></th>
+    <th width="12.5%">
+        <div class="dropdown">
+        <span><h3><a href="Aboutme.html" style="color: black;text-decoration: none" >About Us</h3></span>
+        <div class="dropdown-content">
+            <p><a href="Aboutme.html" style="color: black;text-decoration: none" >Mission & Vision</a></p>
+        <p>Our Network</p>
+        <p>Association</p>  
+        <p>Customer Stories</p>
+        </div>
+    </div>
+    </th>
+    
+    <th width="12.5%">
+      <div class="dropdown">   
+    <span><h3>Men</h3></span>
+       <div class="dropdown-content">
+      <p><a href="https://www.google.com/search?q=mens+gold+bracelet&tbm=isch&hl=en&chips=q:designer+mens+gold+bracelet,g_1:designer:s3IlFwzbBg4%3D&rlz=1C1CHBD_enIN733IN733&hl=en&ved=2ahUKEwiK6diLxcDpAhXUBysKHUvpDMUQ3VZ6BAgBEBc&biw=1349&bih=625"  style="color: black ;text-decoration: none"  >Bracelate</a></p>
+           
+    <p><a href="https://www.google.com/search?rlz=1C1CHBD_enIN733IN733&sxsrf=ALeKk032frt6UkxGP4UpxMn_ahgZf2kWFw:1589911728696&q=mens+gold+jewellery&tbm=isch&chips=q:mens+gold+jewellery,g_1:ring:Xg74kzJg6uQ%3D&usg=AI4_-kTBU9jKtNT9iJ7r1ktd2OgaKKs_Bg&sa=X&ved=2ahUKEwjDqcDewsDpAhUX4zgGHa-OBIMQgIoDKAF6BAgLEAY&biw=1366&bih=576" style="color: black ;text-decoration: none">Ring</a></p>  
+    
+    <p>Other</p>
+        </div>
+    </div>     
+    </th>
+    <th width="12.5%">
+    <div class="dropdown"> 
+        <span><h3>Women</h3></span>
+        <div class="dropdown-content">
+            <p><a href="Nacklace.html" style="color: black ;text-decoration: none">Necklace</a></p>
+            <p><a href="Earring.html" style="color: black ;text-decoration: none">Earrings</a></p>
+        <p>Bangles</p>  
+            <p><a href="Imagegallery.html" style="color: black ;text-decoration: none">Other</a></p>
+        </div>
+    </div>     
+    </th>
+    <th width="12.5%"><a href="https://stores.kalyanjewellers.net/city/Adoni" style="color: black ;text-decoration: none"><h3>Store Location</h3></a></th>
+    <th width="12.5%"><h3><a href="ContactUs.html" style="color: black ;text-decoration: none">Contact Us</a></h3></th>
+    <th width="12.5%"><h3><a href="Ambassadors.html" style="color: black ;text-decoration: none">Ambassadors</a></h3></th>
+    
+    
+    
+    
+    <th width="12.5%"><h3><a href="Gift.html" style="color: black ;text-decoration: none">Gift Card</a></h3></th>
+</tr>    
+</table>
+
+<!--slider image-->
+<div class="w3-content w3 section" style="max-width: 1350px">
+    <img class="myslides" src="banner4.jpg" style="width: 100%">
+    <img class="myslides" src="banner3.jpg" style="width: 100%">
+    <img class="myslides" src="banner5.jpg" style="width: 100%">
+    <img class="myslides" src="banner7.jpg" style="width: 100%">
+    <img class="myslides" src="banner8.jpg" style="width: 100%">
+
+</div>
+
+<br><br>
+<table border="0"  width="100%"  bgcolor="#fff">
+<tr>
+<td colspan="5"><h2>Gold Necklace</h2><hr></td>
+</tr>   
+<tr>
+<th class="zoom"><img src="n1.jpg" width="70%"></th>
+<th class="zoom"><img src="n2.jpg" width="70%"></th>
+<th class="zoom"><img src="n3.jpg" width="70%"></th>
+<th class="zoom"><img src="n4.jpg" width="70%"></th>
+<th class="zoom"><img src="n5.jpg" width="70%"></th>
+</tr>
+
+
+<tr>
+<th>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star half" style="color: orange"></span>
+</th>
+
+    
+<th>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star "></span>
+</th>
+    
+<th>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star "></span>
+</th>
+    
+<th>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star"></span>
+</th>
+    
+<th>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+</th>
+    </tr>   
+<tr>  
+<th>Price:<font color="Darkgreen">5500/-</font></th>
+<th>Price:<font color="darkgreen">8800/-</font></th>
+<th>Price:<font color="darkgreen">5000/-</font></th>
+<th>Price:<font color="darkgreen">7500/-</font></th>
+<th>Price:<font color="darkgreen">8000/-</font></th>
+</tr>
+
+<tr>
+    <th><a href="showdetails.html"><input type="button" value="Show Details" style="width: 125px; height: 30px; background-color:blue; color:white";></a></th> 
+    
+    <th><a href="showdetails2.html"><input type="button" value="Show Details" style="width: 125px; height: 30px; background-color:blue; color:white";></a></th> 
+    
+    <th><a href="showdetails3.html"><input type="button" value="Show Details" style="width: 125px; height: 30px; background-color:blue; color:white";></a></th> 
+    
+    <th><a href="showdetails4.html"><input type="button" value="Show Details" style="width: 125px; height: 30px; background-color:blue; color:white";></a></th> 
+    
+    <th><a href="showdetails5.html"><input type="button" value="Show Details" style="width: 125px; height: 30px; background-color:blue; color:white";></a></th> 
+</tr>
+</table>
+    
+    
+    
+<br>
+<table border="0"  width="100%"  bgcolor="#fff">
+<tr>
+    <td colspan="5"><h2>Gold Earring</h2><hr></td>
+</tr>   
+<tr>
+
+<th class="zoom"><img src="e1.jpg" width="70%"></th>
+<th class="zoom"><img src="e2.jpg" width="70%"></th>
+<th class="zoom"><img src="oth.jpg" width="70%"></th>
+<th class="zoom"><img src="e4.jpg" width="70%"></th>
+<th class="zoom"><img src="e50.jpg" width="70%"></th>
+</tr>
+
+<tr>
+<th>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star half" style="color: orange"></span>
+</th>
+
+    
+<th>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star "></span>
+</th>
+    
+<th>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star "></span>
+</th>
+    
+<th>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star "></span>
+<span class="fa fa-star"></span>
+</th>
+    
+<th>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+</th>
+</tr>   
+    
+<tr>
+<th>Price:<font color="Darkgreen">3500</font></th>
+<th>Price:<font color="darkgreen">4800</font></th>
+<th>Price:<font color="darkgreen">5000</font></th>
+<th>Price:<font color="darkgreen">3500</font></th>
+<th>Price:<font color="darkgreen">6000</font></th>
+</tr>
+    
+<tr>
+    <th><a href="ershow1.html"><input type="button" value="Show Details" style="width: 125px; height: 30px; background-color:blue; color:white";></a></th> 
+    
+    <th><a href="ershow2.html"><input type="button" value="Show Details" style="width: 125px; height: 30px; background-color:blue; color:white";></a></th> 
+    
+    <th><a href="ershow3.html"><input type="button" value="Show Details" style="width: 125px; height: 30px; background-color:blue; color:white";></a></th> 
+    
+    <th><a href="ershow4.html"><input type="button" value="Show Details" style="width: 125px; height: 30px; background-color:blue; color:white";></a></th> 
+    
+    <th><a href="ershow5.html"><input type="button" value="Show Details" style="width: 125px; height: 30px; background-color:blue; color:white";></a></th> 
+</tr>
+</table>
+    
+
+<table border="0"  width="100%"  bgcolor="#fff">
+<tr>
+    <td colspan="5"><h2>Other</h2><hr></td>
+</tr>   
+<tr>
+
+<th class="zoom"><img src="e3.jpg" width="70%"></th>
+<th class="zoom"><img src="oth2.jpg" width="70%"></th>
+<th class="zoom"><img src="oth3.jpg" width="70%"></th>
+<th class="zoom"><img src="oth7%20(1).jpg" width="70%"></th>
+<th class="zoom"><img src="oth5.jpg" width="70%"></th>
+</tr>
+
+<tr>
+<th>
+<br>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star half" style="color: orange"></span>
+</th>
+
+<br>    
+<th>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star "></span>
+</th>
+    
+<th>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star "></span>
+</th>
+    
+<th>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star"></span>
+</th>
+    
+<th>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star ckecked" style="color: orange"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+</th>
+</tr>   
+<tr>
+<th><h3>Price:<font color="Darkgreen">4700/-</font></h3></th>
+<th>Price:<font color="darkgreen">8400/-</font></th>
+<th>Price:<font color="darkgreen">5000/-</font></th>
+<th>Price:<font color="darkgreen">2500/-</font></th>
+<th>Price:<font color="darkgreen">7000/-</font></th>
+</tr>
+    
+<tr>
+<th><input type="button" value="Show Details" style="width: 125px; height: 30px; background-color:blue; color:white";></th> 
+    
+<th><input type="button" value="Show Details" style="width: 125px; height: 30px; background-color:blue; color:white";></th> 
+    
+<th><input type="button" value="Show Details" style="width: 125px; height: 30px; background-color:blue; color:white";></th> 
+    
+<th><input type="button" value="Show Details" style="width: 125px; height: 30px; background-color:blue; color:white";></th> 
+    
+<th><input type="button" value="Show Details" style="width: 125px; height: 30px; background-color:blue; color:white";></th> 
+</tr>
+</table>
+<br>
+
+   
+<!-----Start of footer-------------------------------------->
+<table border="0" width="100%" height="170px" bgcolor="gray">
+<tr>
+    <th bgcolor="crimson"><font color="white"><b>Quick Links</b></font></th>
+    <th bgcolor="crimson"><font color="white"><b>Follow Us</b></font></th>
+    <th bgcolor="crimson"><font color="white"><b>Contact Us</b></font></th>
+    <th bgcolor="crimson"><font color="white"><b>Search</b></font></th>
+</tr>
+    
+<tr>
+<td>
+<ul>
+<li><b>Women</b></li>
+<li><b>men</b></li>
+<li><b>Ambassadors</b></li>
+<li><b>About Us</b></li>
+</ul>
+
+    
+
+<td>
+<ul>
+<li><b>Facebook</b></li>
+<li><b>twitter</b></li>
+<li><b>Instagram </b></li>
+<li><b>YouTube</b></li>
+</ul>
+    
+<td>
+<ul>
+    <li><b>Priyanka Suryavanshi</b></li>
+    <li><b>+91 9527856099</b></li>
+<li><b>India</b></li>
+<li><b>421503</b></li>
+</ul>
+    
+<td><input type="text" placeholder="Search">
+   <input type="button" value="Search"> 
+</td>
+</tr>
+</table>
+<!--End of the footer-->
+<script>
+var myIndex=0;
+corouse1();
+function corouse1(){
+    var i;
+    var x=document.getElementsByClassName("myslides");
+    for(i=0;i<x.length;i++)
+    {
+        x[i].style.display="none";
+    }
+    myIndex++;
+    if(myIndex>x.length){
+        myIndex=1;
+    }
+    x[myIndex-1].style.display="block";
+    setTimeout(corouse1,3000); //change image evry 3 sec
+}
+    
+</script>
+</body>
+
+</html>

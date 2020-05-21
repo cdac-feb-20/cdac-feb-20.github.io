@@ -1,0 +1,37 @@
+body{
+     background: url(pr.jpg);
+}
+header{
+     font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    background: transparent;
+ 
+   color: crimson;
+}
+p{
+    font-size: 35px;
+    font-weight: bold;
+    font: arial;
+      
+}
+main{
+    margin-left: 10%;
+}
+.back{
+      background: gray;
+}
+.box{
+    
+    display: block;
+    float: left;
+   width: 15%;
+    height: 35;
+    padding: 10px;
+    padding-left: 10px;   
+}
+img{
+    border-radius: 5px;
+  width: 100%;
+}

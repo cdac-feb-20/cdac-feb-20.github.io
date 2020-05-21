@@ -1,0 +1,31 @@
+body{
+height: 100vh;
+
+background-color:papayawhip;
+
+display: flex;
+justify-content: center;
+align-items: center;    
+}
+#aboutus h2{
+    margin-bottom: 25px;
+    color: navy;
+    font-feature-settings: normal;
+    font-style:bold;
+}
+#aboutus p{
+    color:red;
+    font-family:inherit;
+    font-size: 18px;
+    
+}
+.img-wrap{
+    width: 100%;
+}
+.img-wrap img{
+    width: 100%;
+    padding: 10px;
+    height: 90%;
+
+    box-shadow: 0 0 10px #999999;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alert</title>
+    <style> 
+        #pop{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: gray;
+            //background-color: aqua;
+        }
+    </style>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"> </script>
+</head>
+<body>
+    
+    <button onclick="popup()" id="pop">Click me</button>
+    <script>
+    function popup(){
+          swal({
+              title: "Good Job!",
+              text: "You Sign up successfully!",
+              icon: "success",
+              button: "OK",
+});
+    }
+    </script>
+</body>
+</html>
