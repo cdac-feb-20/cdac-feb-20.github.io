@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="Container">
+            <div class="nav-wrapper">
+                <div class="left-side">
+                    <div class="nav-link-wrapper">
+                        <a href=index.html>Home</a>
+                    </div> 
+
+                    <div class="nav-link-wrapper">
+                         <a href=about.html>About</a>
+                    </div>
+
+                   <div class="nav-link-wrapper">
+                    <a href=internships.html>Internships</a>
+                    </div>
+
+                   <div class="nav-link-wrapper">
+                        <a href=Hobbies.html>Hobbies</a>
+                    </div>
+
+                </div>
+
+                <div class="right-side">
+                    <div class="brand">
+                        <div>Sandhya Pandey</div>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="content-wrapper">
+                <div class="portfolio-items-wrapper">
+
+                    <div class="portfolio-img-background" style="background-image:url('images/p1.jpg')">
+                            <!-- class="portfolio-item-wrapper" -->
+                  
+                        <!-- <div > </div>  -->
+                        <div class="img-text-wrapper">
+                            <div class="logowrappper">
+                                 <img src="images/logos/l1.png" style="margin: 130px 50px">
+                            </div>
+
+                            <div class="subtitle">
+                                Loves Designing
+                            </div>
+                             
+                   
+                        </div>
+                    </div>
+
+                    <div class="portfolio-img-background" style="background-image:url('images/p2.jpg')">
+                        <!-- <div > </div>  -->
+                        <div class="img-text-wrapper">
+                            <div class="logowrappper">
+                                <img src="images/logos/l2.png" style="margin: 130px 40px">
+                            </div>
+
+                            <div class="subtitle">
+                                Completed graduation from Pune University.
+                            </div>
+                             
+                        </div>
+                    </div>
+
+                    <div class="portfolio-img-background" style="background-image:url('images/p3.jpg')">
+                        <!-- <div > </div>  -->
+                        <div class="img-text-wrapper">
+                            <div class="logowrappper">
+                                <img src="images/logos/l3.png" style="margin: 130px 50px">
+                            </div>
+
+                            <div class="subtitle">
+                                good at net surfing
+                            </div>
+                             
+                        </div>
+                    </div>
+
+                    <div class="portfolio-img-background" style="background-image:url('images/p4.jpg')">
+                        <!-- <div > </div>  -->
+                        <div class="img-text-wrapper">
+                            <div class="logowrappper">
+                                <img src="images/logos/l4.png" style="margin: 130px 25px">
+                            </div>
+
+                            <div class="subtitle">
+                                never give up attitude leads toward success.
+                            </div>
+                             
+                        </div>
+                    </div>
+
+                    <div class="portfolio-img-background" style="background-image:url('images/p5.jpg')">
+                        <!-- <div > </div>  -->
+                        <div class="img-text-wrapper">
+                            <div class="logowrappper">
+                                <img src="images/logos/l6.png" style="margin: 130px 50px">
+                            </div>
+
+                            <div class="subtitle">
+                                Solving real problem is a challenge.  
+                            </div>
+                             
+                        </div>
+                    </div>
+
+                    <div class="portfolio-img-background" style="background-image:url('images/p7.jpg')">
+                        <!-- <div > </div>  -->
+                        <div class="img-text-wrapper">
+                            <div class="logowrappper">
+                                <img src="images/logos/l7.png" style="margin: 130px 50px">
+                            </div>
+
+                            <div class="subtitle">
+                                Hobbies makes life loving.
+                            </div>
+                             
+                        </div>
+                    </div>
+
+                    <div class="portfolio-img-background" style="background-image:url('images/p8.jpg')">
+                        <!-- <div > </div>  -->
+                        <div class="img-text-wrapper">
+                            <div class="logowrappper">
+                                <img src="images/logos/l9.png" style="margin: 130px 5px">
+                            </div>
+
+                            <div class="subtitle">
+                                Teamwork enhances the skills and eliminates the weaknesses
+                            </div>
+                             
+                        </div>
+                    </div>
+
+                    <div class="portfolio-img-background" style="background-image:url('images/p10.jpg')">
+                        <!-- <div > </div>  -->
+                        <div class="img-text-wrapper">
+                            <div class="logowrappper">
+                                <img src="images/logos/l10.png" style="margin: 130px 50px">
+                            </div>
+
+                            <div class="subtitle">
+                                Believe in hardwork.
+                            </div>
+                             
+                        </div>
+                    </div>
+
+                    <div class="portfolio-img-background" style="background-image:url('images/p11.jpg')">
+                        <!-- <div > </div>  -->
+                        <div class="img-text-wrapper">
+                            <div class="logowrappper">
+                                <img src="images/logos/l11.png" style="margin: 130px 50px">
+                            </div>
+
+                            <div class="subtitle">
+                                love for designing
+                            </div>
+                             
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+      
+        portfolioItems.forEach(portfolioItem => {
+          portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.add('image-blur');
+          });
+      
+          portfolioItem.addEventListener('mouseout', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.remove('image-blur');
+          });
+        });
+      
+      </script>
+      
+</html>
