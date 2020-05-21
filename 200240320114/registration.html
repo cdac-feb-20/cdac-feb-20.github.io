@@ -1,0 +1,124 @@
+<!doctype html>
+
+<html>
+<head>
+<title>Register</title>
+
+<style>
+body {
+margin:1;
+padding:0;
+background :linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(pix5.jpg) no-repeat; 
+background-size:100%;
+background-position:center;
+font-family:sans-serif;
+min-height: 40em;
+}
+
+.loginbox {
+width:380px;
+HEIGHT:600px;
+background:none;
+color:#fff;
+top:50%;
+left:50%;
+position:absolute;
+transform:translate(-50%,-50%);
+box-sizing:border-box;
+padding:70px 30px; 
+}
+
+h1{
+margin:0;
+padding:0 0 20px;
+text-align: center;
+font-size: 25px;
+}
+
+.loginbox p{
+margin : 0;
+padding : 0;
+font-weight : bold;
+}
+
+.loginbox input{
+width:100%;
+margin-bottom:20px;
+border:none;
+outline:none;
+background :none;
+}
+
+.loginbox input[type="text"], input[type="password"], input[type="email"]
+{
+border: none;
+border-bottom:1px solid #fff;
+background :none;
+outine : none;
+height : 40px;
+color : #fff;
+font-size : 16px;
+}
+
+.loginbox input[type="submit"]
+{
+border: none;
+outline:none;
+height:40px;
+background:#fb2525;
+color:#fff;
+font-size:18px;
+border-radius:20px;
+}
+
+.loginbox input[type="submit"]:hover
+{
+cursor:pointer;
+background:#ffc107;
+color:#000;
+}
+
+.loginbox a{
+text-decoration : none;
+font-size : 14px;
+line-height : 20px;
+color : darkgrey;
+}
+
+.loginbox a:hover
+{
+    cursor:pointer;
+	background:#ffc107;
+	color:#000;	
+}
+
+</style>
+</head>
+<body>
+
+<div class="loginbox">
+<form name="Registration_form" action="" method="post">
+<h1>User Registration</h1>
+<br>
+
+<p>User name</p>
+<input type="text" size=25 name="uname" placeholder="Enter Name here">
+
+<p>Password</p>
+<input type="password" size=25 name="pwd" placeholder="Enter Password here">
+
+<p>Email Address</p>
+<input type="email"  size=25 name="email" placeholder="Enter Email here">
+
+<p>Mobile No</p>
+<input type="text" size=25 name="mobno" placeholder="Enter Mobile No">
+
+<input type="submit" name="" value="SUBMIT">
+
+<p>Already a user?<a href="login.html">  Login Here</a></p>
+
+</form>
+
+</div>
+</body>
+</html>
