@@ -13,7 +13,7 @@ body
 	display:flex;
 	justify-content:center;
 	align-items:center;
-	background-image:url(black.jpg);
+	background-image:url(../IMAGES/black.jpg);
 	background-size:cover;
 	background-position:none;
 
