@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  color: darkgray;
+  color: green;
+  text-shadow: 2px 4px;
+  background-image: url(title-background.jpg);
+   background-size: cover;
+  text-shadow: 2px 2px 5px darkblue;
+ 
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* MAin content-1 image */
+.main-content-img {
+  width: 100%;
+  padding: 20px;
+  background-image: url(India-UN-flags.jfif);
+  background-size: cover;
+}
+
+/* Main content-2 image */
+.main-content2-img {
+  width: 100%;
+  padding: 20px;
+  background-image: url(Statue-of-unity.jfif);
+  background-size: cover;
+}
+
+/* MMy profile image */
+.myImage {
+  width: 100%;
+  padding: 20px;
+  background-image: url(shashank.jfif);
+  background-size: cover;
+}
+
+/* Add a card effect for articles */
+.card1 {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+   background-image: url(card-background-2.jpg);
+   background-size: cover;
+}
+
+.card2 {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+   background-image: url(card-background.jpg);
+   background-size: cover;
+}
+
+.card3 {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+   background-image: url(card-background-3.jpg);
+   background-size: cover;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  
+  background-image: url(footer-image.jpg);
+  background-size: cover;
+}
+
+.login {
+	color: white;
+	position: absolute;
+    top: 35px;
+    right: 45px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+	<a href="login-page.html" class="login">LOGOUT</a>
+  <h2>SHASHANK AGAM's BLOG</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card1">
+      <h2>Which country has the highest chance of becoming the 6th permanent member of the United Nations?</h2>
+      <h5>May 18, 2020</h5>
+      <div class="main-content-img" style="height:430px;"></div>
+      <p>Without reforms of UN security council, currently no other nation will be able to get into permanent security council.
+
+			The top and the only contender for the permanent position seat at present are..
+
+			1) India
+
+			2) Germany
+
+			3) Japan
+
+			3) Brazil
+
+			These four nations are called as G4 nations, which have everything necessary to become permanent position at UN. They all support each other's bid to UN's permanent position.
+		</p>
+      <a href="https://www.quora.com/Which-country-has-the-highest-chance-of-becoming-the-6th-member-of-the-permanent-five-in-the-United-Nations/answer/Shashank-Agam"><b>Want to know more about this. Click me!<b></a>
+    </div>
+	<div class="card2">
+      <h2>Cost of Statue of Unity v/s Cost of Buddha's Statue in China</h2>
+      <h5>May 20, 2020</h5>
+      <div class="main-content2-img" style="height:430px;"></div>
+		<p>
+			The cost of Statue of Unity is $200million(14,60 crores rupees) and the cost of whole establishment is $430million(3000 crores rupees)
+			The cost of Spring Temple of Buddha was originally expected to cost $55million(402 crores rupees) and the cost of Statue is $18million(131 crores rupees)
+			**Actually no one knows the exact cost of Spring Temple of Buddha, it was estimated cost of the whole establishment before the construction started, but we all know the cost always escalates during construction.
+
+		</p>
+      <a href="https://www.quora.com/China-had-built-Buddhas-153-m-statue-with-only-138-crore-rupees-Why-did-the-BJP-s-Sarkar-waste-the-public-s-hard-earned-3-000-crore-Was-this-money-earned-by-Modi-s-ancestors/answer/Shashank-Agam"><b>Want to know more about this. Click me!<b></a>
+    </div>
+	
+  </div>
+  <div class="rightcolumn">
+    <div class="card3">
+      <h2>About Me</h2>
+      <div class="myImage" style="height:240px;"></div>
+      <p>I am a proactive person who believes that a healthy mind resides in a healthy body. I have an orange belt in karate . I love to gain knowledge, I have written many answers on Quora.</p>
+    </div>
+	
+	</div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2><a href="https://www.quora.com/profile/Shashank-Agam" style="color: white;">Follow me on Quora...</a></h2>
+</div>
+
+</body>
+</html>
