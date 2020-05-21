@@ -2,12 +2,308 @@
 <html>
 <head>
 
-<title>home page</title>
+<title>Slider</title>
 <meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+@font-face {
+  src: url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.slide__text-desc {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
 
-<link rel="stylesheet" type="text/css" href="home.css">
+*, *:before, *:after {
+  box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-size: 62.5%;
+  height: 100%;
+  overflow: hidden;
+}
+svg {
+  display: block;
+  overflow: visible;
+}
+
+.slider-container {
+  position: relative;
+  top:100px;
+  height: 700px;
+  width: 100%;
+  margin:auto;
+  user-select: none;
+  cursor: all-scroll;
+}
+
+.slider-control {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  width: 12%;
+  height: 100%;
+  transition: opacity 0.3s;
+  will-change: opacity;
+  opacity: 0;
+}
+.slider-control.inactive:hover {
+  cursor: auto;
+}
+.slider-control:not(.inactive):hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.slider-control.left {
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+}
+.slider-control.right {
+  right: 0;
+  background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.slider-pagi {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  font-size: 0;
+  list-style-type: none;
+}
+.slider-pagi__elem {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.slider-pagi__elem:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  transform: translate(-50%, -50%) scale(0);
+}
+.slider-pagi__elem.active:before, .slider-pagi__elem:hover:before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.slider {
+  z-index: 1;
+  position: relative;
+  height: 500px;
+  width:100%;
+}
+.slider.animating {
+  transition: transform 0.5s;
+  will-change: transform;
+}
+.slider.animating .slide__bg {
+  transition: transform 0.5s;
+  will-change: transform;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.slide.active .slide__overlay,
+.slide.active .slide__text {
+  opacity: 1;
+  transform: translateX(0);
+}
+.slide__bg {
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  will-change: transform;
+}
+.slide:nth-child(1) {
+  left: 0;
+}
+.slide:nth-child(1) .slide__bg {
+  left: 0;
+  background-image: url("homeslide1.jpg");
+}
+.slide:nth-child(1) .slide__overlay-path {
+  fill: #e6e6fa;
+}
+@media (max-width: 991px) {
+  .slide:nth-child(1) .slide__text {
+    background-color: rgba(233, 156, 126, 0.8);
+  }
+}
+.slide:nth-child(2) {
+  left: 100%;
+}
+.slide:nth-child(2) .slide__bg {
+  left: -50%;
+  background-image: url("homeslide2.jpg");
+}
+.slide:nth-child(2) .slide__overlay-path {
+  fill: #e6e6fa;
+}
+@media (max-width: 991px) {
+  .slide:nth-child(2) .slide__text {
+    background-color: rgba(48, 48, 48, 0.8);
+  }
+}
+.slide:nth-child(3) {
+  left: 200%;
+}
+.slide:nth-child(3) .slide__bg {
+  left: -100%;
+  background-image: url("homeslide3.jpg");
+}
+.slide:nth-child(3) .slide__overlay-path {
+  fill: #e6e6fa;
+}
+@media (max-width: 991px) {
+  .slide:nth-child(3) .slide__text {
+    background-color: rgba(41, 66, 74, 0.8);
+  }
+}
+.slide:nth-child(4) {
+  left: 300%;
+}
+.slide:nth-child(4) .slide__bg {
+  left: -150%;
+  background-image: url("homeslide4.png");
+}
+.slide:nth-child(4) .slide__overlay-path {
+  fill: #00bfff;
+}
+@media (max-width: 991px) {
+  .slide:nth-child(4) .slide__text {
+    background-color: rgba(203, 198, 195, 0.8);
+  }
+}
+
+.slide__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.slide__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  min-height: 810px;
+  transition: transform 0.5s 0.5s, opacity 0.2s 0.5s;
+  will-change: transform, opacity;
+  transform: translate3d(-20%, 0, 0);
+  opacity: 0;
+}
+@media (max-width: 991px) {
+  .slide__overlay {
+    display: none;
+  }
+}
+.slide__overlay path {
+  opacity: 0.8;
+}
+.slide__text {
+  position: absolute;
+  width: 25%;
+  bottom: 15%;
+  left: 12%;
+  color: #000;
+  transition: transform 0.5s 0.8s, opacity 0.5s 0.8s;
+  will-change: transform, opacity;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+@media (max-width: 991px) {
+  .slide__text {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20rem;
+    text-align: center;
+    transform: translateY(50%);
+    transition: transform 0.5s 0.5s, opacity 0.5s 0.5s;
+    padding: 0 1rem;
+  }
+}
+.slide__text-heading {
+  font-family: "Polar", Helvetica, Arial, sans-serif;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 991px) {
+  .slide__text-heading {
+    line-height: 10rem;
+    font-size: 3.5rem;
+  }
+}
+.slide__text-desc {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 991px) {
+  .slide__text-desc {
+    display: none;
+  }
+}
+.slide__text-link {
+  z-index: 5;
+  display: inline-block;
+  position: relative;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 2.3rem;
+  perspective: 1000px;
+}
+@media (max-width: 991px) {
+  .slide__text-link {
+    margin: -2rem 0 8rem;
+  }
+}
+.slide__text-link:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transform-origin: 50% 100%;
+  transform: rotateX(-85deg);
+  transition: transform 0.3s;
+  will-change: transform;
+}
+.slide__text-link:hover:before {
+  transform: rotateX(0);
+}
+
+</style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 $(document).ready(function() {
@@ -135,73 +431,8 @@ $(document).ready(function() {
 });
 </script>
 </head>
+
 <body>
-<div class="header">
-<div class="campanylogo">
-<img src="campanyLogo.png" class="user">
-</div>
-<div class="n">
-<b>TECHNOVA</b>
-</div>
-<div class="campanyname">
-<h2>TECHNOVA SOLUTION PVT LTD</h2>
-<p>Creativity Beyond Imagination<p>
-</div>
-<div class="search">
-<input type="text" name="Fname" placeholder="search here"><br>
-<i class="fa fa-search" aria-hidden="true"></i>
-
-</div>
-<div class="menu-bar">
-<ul> 
-<li class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i><b>Home</b></a></li>
-<li><a href="#"><i class="fa fa-clone" aria-hidden="true"></i><b>Services</b></a>
-
-<div class="sub-menu-1">
-<ul>
-<li class="hover-me"><a href="webdesign.html">Website Designing</a></li>
-<li><a href="webdevelop.html">Web Application Development</a></li>
-<li><a href="#">Custom software Development</a></li>
-<li><a href="#">E-commerece Development</a></li>
-<li><a href="#">Search Engine Optimization</a></li>
-<li><a href="#">Domain Registration</a></li>
-<li><a href="#">Online Marketing</a></li>
-<li><a href="#">Advertising Agency</a></li>
-</ul>
-</div>
-</li>
-<li><a href="#"><i class="fa fa-laptop" aria-hidden="true"></i><b>Technology</b></a>
-<div class="sub-menu-1">
-<ul>
-<li><a href="#">PHP</a></li>
-<li><a href="#">.Net</a></li>
-<li><a href="#">HTML</a></li>
-<li><a href="#">XML</a></li>
-<li><a href="#">Java Script</a></li>
-<li><a href="#">Jquery</a></li>
-<li><a href="#">My SQL</a></li>
-<li><a href="#">Oracle</a></li>
-</ul>
-</div>
-</li>
-<li><a href="#"><b><i class="fa fa-user" aria-hidden="true"></i>About Us</b></a>
-<div class="sub-menu-1">
-<ul>
-<li><a href="vision.html">Vision</a></li>
-<li><a href="value.html">Values</a></li>
-<li><a href="career.html">Careers</a></li>
-
-</ul>
-</div>
-</li>
-<li><a href="contactus.html"><b><i class="fa fa-phone" aria-hidden="true"></i>Contact Us</b></a></li>
-<li><a href="login.html"><b><i class="fa fa-sign-in" aria-hidden="true"></i>login</b></a></li>
-</ul>
-</div>
-</div>
-
-
-
 <div class="slider-container">
   <div class="slider-control left inactive"></div>
   <div class="slider-control right"></div>
@@ -214,9 +445,9 @@ $(document).ready(function() {
           <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
         </svg>
         <div class="slide__text">
-          <h2 class="slide__text-heading">WEB DESINING</h2>
+          <h2 class="slide__text-heading">WEB DESINING.</h2>
           <p class="slide__text-desc">Technova Solutions offers Website Designing, Web Application Development-commerce solutions and Custom Web site Development. Our professionals have proven industry and technical experience and use pioneering techniques and standard methodologies to provide innovative solutions in time. </p>
-         <a href="webdesign.html" class="slide__text-link">Learn More</a>
+          <a class="slide__text-link" >Learn More</a>
         </div>
       </div>
     </div>
@@ -229,7 +460,7 @@ $(document).ready(function() {
         <div class="slide__text">
           <h2 class="slide__text-heading ">Web Application Development</h2>
           <p class="slide__text-desc">We are specialized in developing creative php web design applications.We offer PHP development services for different domains such as finanace,real estate, engineering, social networking, e commerce, real estate,hospitality, medicine, etc in order to get more revenue from their websites.</p>
-			<a href="webdevelop.html" class="slide__text-link">Learn More</a>
+          <a class="slide__text-link">Learn More</a>
         </div>
       </div>
     </div>
@@ -242,7 +473,7 @@ $(document).ready(function() {
         <div class="slide__text">
           <h2 class="slide__text-heading">custom Software Development</h2>
           <p class="slide__text-desc">Pioneer Solutions offers Website Designing, Web Application Development-commerce solutions and Custom Web site Development. Our professionals have proven industry and technical experience and use pioneering techniques and standard methodologies to provide innovative solutions in time.</p>
-			<a class="slide__text-link">Learn More</a>
+          <a class="slide__text-link">Learn More</a>
         </div>
       </div>
     </div>
@@ -255,23 +486,13 @@ $(document).ready(function() {
         </svg>
         <div class="slide__text">
           <h2 class="slide__text-heading">Search Engine Optimization</h2>
-          <p class="slide__text-desc">Now a days internet is integrated part of business and most of the traffic is achieved through search engine.Website, proper marketing analysis and search engine optimization are the basic requirement to grow your business online.</p>
-			<a class="slide__text-link">Learn More</a>
+          <p class="slide__text-desc">Now a days internet is integrated part of business and most of the traffic is achieved through search engine.Website, proper marketing analysis and search engine optimization are the basic requirement to grow your business online</p>
+          <a class="slide__text-link">Learn More</a>
         </div>
       </div>
     </div>
 	
 </div>
-
-
-<div class="f">
-<p>Copyright @ 2020. All Rights Reserved Privacy PolicyTerms & conditions</p>
-</div>
-<div class="detail">
-<p><a href="contactus.html">Contact Us</a><br><br>
-				mohini chaudhari<br>
-				9049231353<br>
-				mohinivchaudhari.MV@gmail.com</p>
-</div>
+		<h1 style="color:#fff; text-align:center; font-size:60px">Slider</h1>
 </body>
 </html>

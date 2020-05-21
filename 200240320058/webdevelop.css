@@ -1,0 +1,272 @@
+body{
+padding:0px;
+margin:0px;
+
+}
+
+
+.header{
+	
+	width:100%;
+	height:100px;
+	background-color: rgba(70,130,180, 0.7);
+}
+	
+.campanylogo{
+
+		width:0;
+		height:0;
+		margin-left:30px;
+		position:absolute;
+		margin-top:1%;
+	}	
+	
+.n b{
+	position:absolute;
+	width:0;
+	height:0;
+	margin-left:20px;
+	margin-top:70px;
+	font-size:18px;
+	color:#fff;
+	text-shadow: 1px 2px #ff0000
+	}	
+
+.search input[type="text"]{
+	background:transparent;
+	outline:none;
+	height:29px;
+	width:700px;
+	color:#fff;
+	font-size:19px;
+	margin-left:44%;
+	margin-top:19px;
+	border-radius:20px;
+	padding-left:20px;
+	border-style:solid;
+	border-color:#fff;
+	position:absolute;
+	}
+	
+.campanyname h2{
+	position:absolute;
+	width:400px;;
+	height:50px;
+	margin-left:150px;
+	margin-top:20px;
+	font-size:24px;
+	color:#fff;
+	text-shadow:2px 2px blue;
+
+	}
+
+.campanyname p{
+
+	position:absolute;
+	width:300px;;
+	height:50px;
+	margin-left:270px;
+	margin-top:50px;
+	color:#fff;
+	font-size:20px;
+	text-shadow:1px 2px #6495ed;
+}	
+	
+.fa-search{
+	position:absolute;
+	top:27px;
+	color:#fff;
+	margin-left:95%;
+	font-size:20px;
+	
+}
+
+::placeholder{
+	
+	color:grey;
+	}	
+
+
+.menu-bar
+{
+	margin-top:45px;
+	text-align:center;
+	margin-left:600px;
+	position:absolute;
+	height:35px;
+	background-color: rgba(70,130,180, 0.7);
+}	
+
+.menu-bar ul
+{
+	display: inline-flex;
+	list-style:none;
+}
+
+.menu-bar ul li
+{
+	margin-left:0px;
+	margin-top:-1%;
+	width:110px;
+	font-size:16px;
+}
+
+.menu-bar ul li a
+{
+	text-align:center;
+	text-decoration:none;
+	color:#fff;
+	
+
+}
+
+.active,.menu-bar ul li:hover
+{
+	background-color:#6495ed;
+	border-radius:3px;
+	height:27px;
+	margin-top:5px;
+}
+
+.sub-menu-1
+{
+		display:none;
+		
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+	display:block;
+	position:absolute;
+	background:#46b2b4;
+	margin-top:0px;
+	margin-left:10px;
+	background-color: rgba(70,130,180, 0.7);
+	z-index:999999;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+	display:block;
+	
+	margin-left:10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+	width:250px;
+	padding:10px;
+	background:transparent;
+	border-radius:0;
+	text-align:left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{ 
+	color:#b4ff00;
+	
+}
+
+
+
+
+
+
+
+.logo{
+		position:absolute;
+		height:350px;
+		width:80%;
+		margin-left:10%;
+}
+.logoimage h1{
+		position:absolute;
+		margin-left:400px;
+		margin-top:410px;
+		font-size:50px;
+		color:blue;
+		text-shadow:2px 2px deepskyblue;
+}
+.phpheading h2{
+
+		position:absolute;
+		margin-top:500px;
+		margin-left:170px;
+		font-size:35px;
+		color:red;
+
+}
+.phpinfo
+{
+
+		position:absolute;
+		height:600px;
+		width:1050px;
+		margin-top:600px;
+		margin-left:150px;
+		border-radius:50px;
+		background-color:rgba(255,255,255, 0.3);
+		box-shadow:5px 5px 10px 10px #828a8c;
+}
+
+.phpinfo p,li{
+		margin-left:50px;
+		margin-top:30px;
+		font-size:18px;
+}
+
+.benifitheading h2{
+		position:absolute;
+		margin-top:1270px;
+		margin-left:170px;
+		font-size:35px;
+		color:red;	
+}
+.benifit{
+
+		position:absolute;
+		height:400px;
+		width:700px;
+		margin-top:1350px;
+		margin-left:150px;
+		border-radius:50px;
+		background-color:rgba(255,255,255, 0.3);
+		box-shadow:5px 5px 10px 10px #828a8c;
+
+}
+.benifit ul li{
+
+		margin-left:50px;
+		margin-top:50px;
+		font-size:18px;
+
+}
+
+.f{
+	position:absolute;
+	background-color: #292c2f;
+	
+	width:100%;
+	height:200px;
+	margin-top:1800px;
+	
+}
+
+.f p{
+	width:750px;
+	text-shadow: 0px 0px;
+	margin-top:160px;
+	margin-left:470px;
+	font-size:15px;
+	color:#fff;
+}
+.detail p{
+	position:absolute;
+	text-shadow: 0px 0px;
+	margin-top:1850px;
+	margin-left:100px;
+	color:#fff;
+	font-size:20px;
+}
+.detail a{
+	color:red;
+}
