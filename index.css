@@ -16,3 +16,9 @@
     justify-content: center;
     align-items: center;
 }
+
+.make-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
